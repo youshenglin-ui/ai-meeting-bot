@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/ai-meeting-bot/' // <--- 加入這行，斜線包圍您的專案名稱
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  base: '/ai-meeting-bot/' // 確保 GitHub Pages 路徑正確
 })
